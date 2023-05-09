@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+	int m,i;
+	printf("enter a number to generate the series:");
+	scanf("%d",&m);
+	printf("number series of entered number:\n");
+	for(i=1;i<=m;i++)
+	printf("%d\n",i);
+	return 0;
+}
