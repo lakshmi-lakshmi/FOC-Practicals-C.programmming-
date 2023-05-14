@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+double calculateSeriesSum(int n) {
+    double sum = 0;
+    for (int i = 1; i <= n; i++) {
+        sum += pow(i, i);
+    }
+    return sum;
+}
+int main() {
+    int n;
+    printf("Enter the value of 'n': ");
+    scanf("%d", &n);
+    double seriesSum = calculateSeriesSum(n);
+    printf("Sum of the series: %.2lf\n", seriesSum);
+    return 0;
+}
